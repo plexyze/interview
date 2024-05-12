@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Row = styled.div`
-  font: 1.2rem "Fira Sans", sans-serif;
-  color: #0e3777;
+export const AppContainer = styled.div`
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  padding: 8px;
 `;

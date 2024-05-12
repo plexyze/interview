@@ -1,18 +1,15 @@
-import {useEffect, FC, useState} from "react";
+import { FC } from 'react';
+import { AppContextProvider } from './context';
+import { TechnologiesView } from './technologies-view';
+import { AppContainer } from './App.styles';
 
 const App: FC = () => {
-  const [counter, setCounter] = useState(0);
-
-  useEffect(() => {
-    if (counter < 5) {
-      setCounter(counter + 1);
-    }
-  }, [counter]);
-
   return (
-    <>
-      <div>Hello{counter}</div>
-    </>
+    <AppContextProvider>
+      <AppContainer>
+        <TechnologiesView />
+      </AppContainer>
+    </AppContextProvider>
   );
 };
 
